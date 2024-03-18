@@ -59,3 +59,8 @@ Clinic administrators, healthcare professionals, and staff members responsible f
 - Enhanced financial management with detailed tracking of incomes and expenses.
 - Streamlined employee management and payroll processing.
 - Optimized patient care through specialty-based assignment of doctors and efficient resource allocation.
+
+## Testing credentials
+
+- Email: test@example.com
+- Password: test20
