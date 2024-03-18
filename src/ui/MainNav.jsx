@@ -134,7 +134,7 @@ function MainNav() {
 						<li>
 							<StyledNavLink to='/categories'>
 								<MdOutlineSpaceDashboard />
-								<span>Expenses category</span>
+								<span>Expenses categories</span>
 							</StyledNavLink>
 						</li>
 						<li>
