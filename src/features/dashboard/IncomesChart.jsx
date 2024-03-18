@@ -13,7 +13,7 @@ import {
 	ResponsiveContainer,
 } from 'recharts';
 import { eachDayOfInterval, subDays, format, isSameDay } from 'date-fns';
-import Spinner from '../../../../../the-wild-oasis/src/ui/Spinner';
+import Spinner from '../../ui/Spinner';
 import { formatDate, normalizedDate } from '../../utils/helpers';
 
 const StyledSalesChart = styled(DashboardBox)`
