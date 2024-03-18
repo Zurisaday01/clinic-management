@@ -23,6 +23,9 @@ function CreateCategoryForm({ categoryToUpdate = {}, onCloseModal }) {
 	const { errors } = formState;
 
 	function onSubmit(data) {
+		// the categories names have to have the next structure "Name Name"
+		const { name } = data;
+		data.name = name.replace(/\b\w/g, char => char.toUpperCase());
 		if (isEditSession) {
 			updateCategory(
 				{ data, id: updateId },
@@ -34,6 +37,7 @@ function CreateCategoryForm({ categoryToUpdate = {}, onCloseModal }) {
 				}
 			);
 		} else {
+			console.log(data);
 			createCategory(data, {
 				onSuccess: () => {
 					reset();

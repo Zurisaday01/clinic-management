@@ -13,7 +13,7 @@ import {
 	ResponsiveContainer,
 } from 'recharts';
 import { eachDayOfInterval, subDays, format } from 'date-fns';
-import Spinner from '../../../../../the-wild-oasis/src/ui/Spinner';
+import Spinner from '../../ui/Spinner';
 import { formatDate, sumAmounts } from '../../utils/helpers';
 
 const StyledSalesChart = styled(DashboardBox)`
@@ -47,7 +47,9 @@ const ExpensesChart = ({
 		expensesByCategory[category.name.split(' ').join('')] = [];
 	});
 	expenses.forEach(expense => {
-		expensesByCategory[expense.category.name].push(expense);
+		expensesByCategory[expense.category.name.split(' ').join('')]?.push(
+			expense
+		);
 	});
 
 	const data = allDates.map(date => {
@@ -63,7 +65,7 @@ const ExpensesChart = ({
 	let arrayExpensesCategories = [];
 	for (let key in expensesByCategory) {
 		if (expensesByCategory.hasOwnProperty(key)) {
-			arrayExpensesCategories.push(
+			arrayExpensesCategories?.push(
 				`Total${key.charAt(0).toUpperCase()}${key.slice(1)}`
 			);
 		}
