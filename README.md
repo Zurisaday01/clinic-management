@@ -4,8 +4,8 @@ The Clinic Management System is a comprehensive web-based platform designed to s
 
 ## Screenshots
 
-![Dashboard Screenshot](./public/screenshots/dashboard.png)
-![Dashboard Dark Theme in Screenshot](./public//screenshots/dashboard-dark.png)
+![Dashboard Screenshot](./public/screenshots/dashboard1.png)
+![Dashboard Dark Theme in Screenshot](./public//screenshots/dashboard-dark-theme.png)
 ![Log In Screenshot](./public//screenshots/login.png)
 ![Users Screenshot](./public//screenshots/users.png)
 ![Employees Screenshot](./public//screenshots/employees.png)
